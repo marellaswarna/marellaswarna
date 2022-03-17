@@ -1,0 +1,88 @@
+public class class1 {   
+ public class1(){
+     Integer avalue=10;
+Integer bvalue=20;
+Integer result =avalue+bvalue;
+system.debug(result);
+
+//output:[debug:30]
+
+integer studentage=25;
+system.debug(studentage);
+
+//output:[debug:25]
+
+//boolean datatype:
+
+Boolean isvalidvisa;
+system.debug(isvalidvisa);
+//output:[debug:null]
+isvalidvisa =true;
+system.debug(isvalidvisa);
+//output:[debug:true]
+//isvalidvisa='false';//(Line: 20, Column: 1Illegal assignment from String to Boolean)
+isvalidvisa=false;    
+system.debug(isvalidvisa);
+//output:[debug:false]
+
+//date datatype:
+
+date birthday=system.today();
+system.debug(birthday);
+//output:[USER_DEBUG [2]|DEBUG|2022-03-14 00:00:00]
+
+
+//string datatype:
+
+string studentname='swarna';
+system.debug(studentname);
+
+//output:|DEBUG|swarna
+
+//string studentFname='siva';
+//string studentLname='kumar';
+//string studentfullname=studentFname+studentLname;
+//system.debug(studentfullname);
+
+//output:DEBUG|sivakumar
+
+string studentFname='siva';
+string studentLname='kumar';
+string hyphonvar='-';
+string studentfullname=studentFname+hyphonvar+studentLname;
+system.debug(studentfullname);
+
+//output:DEBUG||DEBUG|siva-kumar
+
+//split string datatype:
+
+string studentnames='manoj,kumar,siva,kumar,swarna';
+system.debug(studentnames);
+
+//output:DEBUG|manoj,kumar,siva,kumar,swarna
+
+list<string>studentlist=studentnames.split(',');
+system.debug(studentlist);
+
+//output:DEBUG|(manoj, kumar, siva, kumar, swarna)
+
+for(string s:studentlist){
+    system.debug(s);
+}
+
+//output:DEBUG  //manoj
+                // kumar
+                //siva
+                //kumar
+                //swarna
+
+//date time datatype:
+
+datetime todaysdatetime=system.now();
+system.debug(todaysdatetime);
+
+//output:|DEBUG|2022-03-15 06:30:06
+
+    }
+
+}
